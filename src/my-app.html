@@ -80,6 +80,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       #lookInside {
         margin-top: -15px;
       }
+      #panelPaypalButton {
+        text-align: center;
+        margin-top: 25px;
+      }
     </style>
 
     <app-location route="{{route}}" url-space-regex="^[[rootPath]]"></app-location>
@@ -103,18 +107,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <img src="../images/cosmoCover.jpg">
               <div id="lookInside">Look Inside!</div>
             </a>
-
           </div>
+          <form id='panelPaypalButton' action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="5AHWKRGUT7WBC">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
         </iron-selector>
       </app-drawer>
 
       <!-- Main content -->
       <app-header-layout has-scrolling-region>
 
-        <app-header slot="header" condenses reveals effects="waterfall">
+        <app-header style='height: 200px; background-image: url("../images/Cosmo 3.jpg"); background-size: 100%;' slot="header" condenses reveals effects="waterfall">
           <app-toolbar>
             <paper-icon-button icon="my-icons:menu" drawer-toggle></paper-icon-button>
-            <div main-title>Becoming Cosmo</div>
+            <div main-title style='font-size: 35px;'>Becoming Cosmo</div>
           </app-toolbar>
         </app-header>
 
