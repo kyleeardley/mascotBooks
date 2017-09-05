@@ -8,28 +8,48 @@
       :host {
         display: block;
         padding: 10px;
-        background-size: 100%;
-        min-height: 780px;
       }
-
       .card {
-        height: 250px;
+        min-height: 590px;
+      }
+      span img {
+        width: 25%;
+        float: left;
+        margin-right: 35px;
+        min-width: 200px;
+      }
+      span p {
+        float: left;
+        width: 30%;
+        margin-left: 20px;
+        color: black;
+      }
+      form {
+        position: absolute;
+        bottom: -150px;
+        left: 100px;
       }
 
     </style>    
     
     <div class="card">
-      <div class="circle">1</div>
       <h1>Home</h1>
-      <p>Ut labores minimum atomorum pro. Laudem tibique ut has.</p>
-      <p>Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea.Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea.Cu mei vide viris gloriatur, at populo eripuit sit.</p>
+      <span><img src="../images/cosmoCover.jpg"></span>
+      <span>
+        <p>Cosmo is a baby cougar living on Y Mountain. One day, he hears a
+          noise he has never heard before. What was that noise?
+          It was BYU Football! Join Cosmo on his journey down
+          Y Mountain and into Lavell Edwards Stadium as
+          this baby cougar becomes the mascot of BYU
+        </p>
+      </span> 
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="5AHWKRGUT7WBC">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
     </div>
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-      <input type="hidden" name="cmd" value="_s-xclick">
-      <input type="hidden" name="hosted_button_id" value="5AHWKRGUT7WBC">
-      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-    </form>
   </template>
 
   <script>
