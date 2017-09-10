@@ -1,1 +1,1 @@
-web: node es6-bundled/index.html
+web: node web.js
