@@ -1,1 +1,1 @@
-web: polymer build
+web: node app.js
